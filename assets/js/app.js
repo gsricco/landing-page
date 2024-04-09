@@ -1,27 +1,5 @@
 $(function () {
 
-    let header = $("header"),
-        introH = $("#intro").innerHeight(),
-        scrollOffset = $(window).scrollTop();
-
-    checkScroll(scrollOffset);
-
-    $(window).on("scroll", function () {
-        scrollOffset = $(this).scrollTop();
-        checkScroll(scrollOffset);
-
-    });
-
-    function checkScroll(scrollOffset) {
-
-        if (scrollOffset >= introH) {
-            header.addClass("fixed");
-        } else {
-            header.removeClass("fixed");
-        }
-    }
-
-
     /*Menu nav toggle */
     $('#nav_toggle').on('click', function (event) {
         event.preventDefault();
@@ -40,7 +18,7 @@ $(function () {
 });
 
 
-function funSS(href) {
+function openSendForm(href) {
     window.location.href = href
 }
 
