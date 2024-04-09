@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <title>Layout</title>
+</head>
+
+<body>
+
+<header class="header" id="header">
+    <div class="container">
+        <div class="header_inner">
+
+            <div class="header_logo" data-scroll="#intro">LoremIpsum.<span>Net</span></div>
+
+            <nav class="nav" id="nav">
+                <a class="nav_link" href="#" data-scroll="#about">БИЗНЕС</a>
+                <a class="nav_link" href="#" data-scroll="#service">О нас</a>
+                <a class="nav_link" href="#" data-scroll="#work">Цены</a>
+                <a class="nav_link" href="#" data-scroll="#blog">Оформить заказ</a>
+            </nav>
+
+            <button class="nav-toggle" id="nav_toggle" type="button">
+                <span class="nav-toggle_item">Menu</span>
+            </button>
+
+        </div>
+    </div>
+</header>
+
+
+<div class="page">
+    <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro_inner">
+                <h1 class="intro_title"><span>Lorem ipsum</span> dolor sit<br>
+                    amet consectetur <span>adipiscingo</span></h1>
+                <div class="intro_list">
+                    <h3>At vero eos et accusamus et iusto odio dignissimos ducimus!</h3>
+                    <ul class="intro_list">
+                        <li>&#8212; Totam rem aperiam eaque ipsa</li>
+                        <li>&#8212; Sit voluptatem accusantium doloremque laudantium</li>
+                        <li>&#8212; Sed ut perspiciatis, unde omnis iste natus error</li>
+                    </ul>
+                </div>
+                <div class="intro_btn">
+                    <button>Заказать</button>
+                    <button>Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section" id="order">
+        <div class="container">
+            <div class="section_header">
+                <h1 class="section_title">Оформление  <span>Заказа</span></h1>
+                <div class="section_text">
+                    <p>Перед заполнением формы ознакомьтесь с нашей схемой работы! </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_item">
+                        <div class="card_img">
+                            <img src="assets/images/search.svg" alt="search">
+                        </div>
+                    <div class="order_pixel">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                        <div class="card_text">Lorem ipsum dolorsit amet</div>
+                </div>
+                <div class="card_item">
+                    <div class="card_img">
+                        <img src="assets/images/present.svg" alt="present">
+                    </div>
+                    <div class="order_pixel">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="card_text">Сonsecteturadipiscing elit</div>
+                </div>
+                <div class="card_item">
+                    <div class="card_img">
+                        <img src="assets/images/subtract.svg" alt="">
+                    </div>
+                    <div class="order_pixel">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="card_text">Sed do eiusmod tempor</div>
+                </div>
+                <div class="card_item">
+                    <div class="card_img">
+                        <img src="assets/images/mail.svg" alt="">
+                    </div>
+                    <div class="order_pixel">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="card_text">Esse cillum doloreeu fugiat</div>
+                </div>
+                <div class="card_item">
+                    <div class="card_img">
+                        <img src="assets/images/money.svg" alt="">
+                    </div>
+                    <div class="card_text">Excepteur sint occaecat cupidatat non proident</div>
+                </div>
+            </div>
+            <form method="post">
+            <div class="form">
+                <div class="custom-select">
+                    <div class="selected-option" onclick="toggleOptions()">Выберите тип системы</div>
+                    <ul class="options"  id="options" style="display:none">
+                        <li onclick="selectOption(this)">Sed ut perspiciatis</li>
+                        <li onclick="selectOption(this)">Nemo enim ipsam</li>
+                        <li onclick="selectOption(this)">Et harum quidem</li>
+                        <li onclick="selectOption(this)">Temporibus autem</li>
+                        <li onclick="selectOption(this)">Itaque earum rerum</li>
+                        <li onclick="selectOption(this)">Sed ut perspiciatis 3</li>
+                        <li onclick="selectOption(this)">Option 1</li>
+                        <li onclick="selectOption(this)">Option 2</li>
+                        <li onclick="selectOption(this)">Option 3</li>
+                    </ul>
+                </div>
+                <div class="form_item"><input type="email" name="email" placeholder="Ваш e-mail"></div>
+                <div class="form_item"><input type="text" name="name" placeholder="Ваше имя"></div>
+                <div class="form_item_second">
+                    <div class="form_item_range">
+                        <div class="form_item_label">
+                            <label for="rangeInput">Sed ut perspiciatis, unde omnis iste natus</label>
+                            <span id="rangeValue">50 %</span>
+                        </div>
+                        <input type="range" id="rangeInput" name="rangeInput" min="0" max="100" value="50">
+                    </div>
+                    <div class="form_item">
+                        <input type="file" id="fileInput" name="fileInput">
+                        <label for="fileInput" class="upload-btn"><img src="assets/images/doc.svg" alt="attribute" /> Прикрепить файл</label>
+                    </div>
+                </div>
+                <div class="form_item_btn"><button type="submit">Отправить</button></div>
+            </div>
+        </form>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="footer_item">
+            © 2018 «LoremIpsum.net» Все права защищены.
+        </div>
+        <div class="footer_item" >
+            <img src="assets/images/qiwi.svg" alt="email"/>
+            <span>Qiwi wallet</span>
+        </div>
+        <div class="footer_item" >
+            <img src="assets/images/yandex.svg" alt="email"/>
+            <span>Yandex Money</span>
+        </div>
+        <div class="footer_item" >
+            <img src="assets/images/web_money.svg" alt="email"/>
+            <span>Web Money</span>
+        </div>
+        <div class="footer_item link" onclick="funSS(`mailto:info@ipsum228.com`)">
+            <img src="assets/images/email.svg" alt="email"/>
+            <span>info@ipsum228.com</span>
+        </div>
+        <div class="footer_item link" onclick="funSS(`https://vk.com/loremipsum`)">
+            <img src="assets/images/vk.svg" alt="email"/>
+            <span>Мы вконтакте</span>
+        </div>
+    </footer>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="assets/js/app.js"></script>
+
+
+</body>
+</html>
